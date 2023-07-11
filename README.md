@@ -12,6 +12,30 @@ This is a C++ library implementing various numerical methods for root finding, o
 - ODE Solutions: Euler's Method, Runge-Kutta Methods, etc.
 - PDE Solutions: Finite Difference Method, etc.
 
+## Library Structure
+
+```
+my_library/
+|-- root_finding/
+| |-- bisection.cpp
+| |-- bisection.h
+| |-- newton_raphson.cpp
+| |-- newton_raphson.h
+|-- optimization/
+| |-- gradient_descent.cpp
+| |-- gradient_descent.h
+|-- regression/
+| |-- least_squares.cpp
+| |-- least_squares.h
+|-- tests/
+| |-- test_bisection.cpp
+| |-- test_newton_raphson.cpp
+| |-- test_gradient_descent.cpp
+| |-- test_least_squares.cpp
+|-- main.cpp
+
+```
+
 ## Dependencies
 
 This library uses the Eigen library for matrix operations. You can download it [here](http://eigen.tuxfamily.org/index.php?title=Main_Page).
