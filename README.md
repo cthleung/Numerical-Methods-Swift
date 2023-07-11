@@ -1,8 +1,6 @@
 # Numerical Methods Library in C++
 
-This is a C++ library implementing various numerical methods for root finding, optimization, regression, interpolation, numerical integration, and solving ordinary and partial differential equations. The numerical methods are sorted into folders by problem class.
-
-Test functions are also included.
+This is a C++ library implementing various numerical methods for root finding, optimization, regression, interpolation, numerical integration, and solving ordinary and partial differential equations.
 
 ## Methods Implemented
 
@@ -19,26 +17,22 @@ The library is organized into different modules, each containing the implementat
   - Least Squares (`least_squares.cpp`, `least_squares.h`)
 
 - **Interpolation**: Contains methods for interpolating data points.
-  - Lagrange Interpolation
+  - Lagrange Interpolation (`lagrange_interpolation.cpp`, `lagrange_interpolation.h`)
 
 - **Numerical Integration**: Contains methods for numerical integration.
-  - Trapezoidal Rule
-  - Simpson's Rule
-  - More methods to be added
+  - Trapezoidal Rule (`trapezoidal_rule.cpp`, `trapezoidal_rule.h`)
+  - Simpson's Rule (`simpsons_rule.cpp`, `simpsons_rule.h`)
 
 - **ODE Solutions**: Contains methods for solving ordinary differential equations.
-  - Euler's Method
-  - Runge-Kutta Methods
-  - More methods to be added
+  - Euler's Method (`euler_method.cpp`, `euler_method.h`)
+  - Runge-Kutta Methods (`runge_kutta_methods.cpp`, `runge_kutta_methods.h`)
 
 - **PDE Solutions**: Contains methods for solving partial differential equations.
-  - Finite Difference Method
-
+  - Finite Difference Method (`finite_difference_method.cpp`, `finite_difference_method.h`)
 
 Each module contains a `.cpp` file with the implementation of the methods and a `.h` file with the declaration of the functions.
 
 In addition to these modules, the `tests/` directory contains test files for each method, and `main.cpp` is the entry point for the application.
-
 
 ## Library Structure
 
