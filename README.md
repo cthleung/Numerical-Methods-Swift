@@ -1,6 +1,8 @@
 # Numerical Methods Library in C++
 
-This is a C++ library implementing various numerical methods for root finding, optimization, regression, interpolation, numerical integration, and solving ordinary and partial differential equations.
+This is a C++ library implementing various numerical methods for root finding, optimization, regression, interpolation, numerical integration, and solving ordinary and partial differential equations. The numerical methods are sorted into folders by problem class.
+
+Test functions are also included.
 
 ## Methods Implemented
 
