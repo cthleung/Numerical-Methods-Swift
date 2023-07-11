@@ -45,8 +45,8 @@ This library uses the Eigen library for matrix operations. You can download it [
 Include the relevant header files in your code. For example, to use the bisection method and least squares regression, you would do:
 
 ```cpp
-#include "my_library/root_finding/bisection.h"
-#include "my_library/regression/least_squares.h"
+#include "Numerical-Methods-Cpp/root_finding/bisection.h"
+#include "Numerical-Methods-Cpp/regression/least_squares.h"
 ```
 
 Then, you can call the functions in your code:
