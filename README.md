@@ -37,27 +37,39 @@ In addition to these modules, the `tests/` directory contains test files for eac
 ## Library Structure
 
 ```
-my_library/
+Numerical-Methods-Cpp/
 |-- root_finding/
-| |-- bisection.cpp
-| |-- bisection.h
-| |-- newton_raphson.cpp
-| |-- newton_raphson.h
+  | |-- bisection.cpp
+  | |-- bisection.h
+  | |-- newton_raphson.cpp
+  | |-- newton_raphson.h
 |-- optimization/
-| |-- gradient_descent.cpp
-| |-- gradient_descent.h
+  | |-- gradient_descent.cpp
+  | |-- gradient_descent.h
 |-- regression/
-| |-- least_squares.cpp
-| |-- least_squares.h
+  | |-- least_squares.cpp
+  | |-- least_squares.h
 |-- interpolation/
+  | |-- lagrange_interpolation.cpp
+  | |-- lagrange_interpolation.h
 |-- numerical_integration/
+  | |-- trapezoidal_rule.cpp
+  | |-- trapezoidal_rule.h
+  | |-- simpsons_rule.cpp
+  | |-- simpsons_rule.h
 |-- ode_solutions/
+  | |-- euler_method.cpp
+  | |-- euler_method.h
+  | |-- runge_kutta_methods.cpp
+  | |-- runge_kutta_methods.h
 |-- pde_solutions/
+  | |-- finite_difference_method.cpp
+  | |-- finite_difference_method.h
 |-- tests/
-| |-- test_bisection.cpp
-| |-- test_newton_raphson.cpp
-| |-- test_gradient_descent.cpp
-| |-- test_least_squares.cpp
+  | |-- test_bisection.cpp
+  | |-- test_newton_raphson.cpp
+  | |-- test_gradient_descent.cpp
+  | |-- test_least_squares.cpp
 |-- main.cpp
 
 ```
