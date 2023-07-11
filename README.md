@@ -6,13 +6,39 @@ Test functions are also included.
 
 ## Methods Implemented
 
-- Root Finding: Bisection, Newton's Method, etc.
-- Optimization: Gradient Descent, etc.
-- Regression: Least Squares, etc.
-- Interpolation: Lagrange Interpolation, etc.
-- Numerical Integration: Trapezoidal Rule, Simpson's Rule, etc.
-- ODE Solutions: Euler's Method, Runge-Kutta Methods, etc.
-- PDE Solutions: Finite Difference Method, etc.
+The library is organized into different modules, each containing the implementation of a specific category of numerical methods:
+
+- **Root Finding** (`root_finding/`): Contains methods for finding the roots of a function.
+  - Bisection (`bisection.cpp`, `bisection.h`)
+  - Newton-Raphson (`newton_raphson.cpp`, `newton_raphson.h`)
+
+- **Optimization** (`optimization/`): Contains methods for optimizing a function.
+  - Gradient Descent (`gradient_descent.cpp`, `gradient_descent.h`)
+
+- **Regression** (`regression/`): Contains methods for performing regression analysis.
+  - Least Squares (`least_squares.cpp`, `least_squares.h`)
+
+- **Interpolation**: Contains methods for interpolating data points.
+  - Lagrange Interpolation
+
+- **Numerical Integration**: Contains methods for numerical integration.
+  - Trapezoidal Rule
+  - Simpson's Rule
+  - More methods to be added
+
+- **ODE Solutions**: Contains methods for solving ordinary differential equations.
+  - Euler's Method
+  - Runge-Kutta Methods
+  - More methods to be added
+
+- **PDE Solutions**: Contains methods for solving partial differential equations.
+  - Finite Difference Method
+
+
+Each module contains a `.cpp` file with the implementation of the methods and a `.h` file with the declaration of the functions.
+
+In addition to these modules, the `tests/` directory contains test files for each method, and `main.cpp` is the entry point for the application.
+
 
 ## Library Structure
 
@@ -29,6 +55,10 @@ my_library/
 |-- regression/
 | |-- least_squares.cpp
 | |-- least_squares.h
+|-- interpolation/
+|-- numerical_integration/
+|-- ode_solutions/
+|-- pde_solutions/
 |-- tests/
 | |-- test_bisection.cpp
 | |-- test_newton_raphson.cpp
