@@ -1,96 +1,64 @@
-# C++ Numerical Methods
+# Swift Numerical Methods
 
-This is a C++ library implementing various numerical methods for root finding, optimization, regression, interpolation, linear algebra, numerical integration, and solving ordinary and partial differential equations.
+This is a Swift library implementing various numerical methods for root finding, optimization, regression, interpolation, linear algebra, numerical integration, and solving ordinary and partial differential equations.
 
 ## Methods Implemented
 
 The library is organized into different modules, each containing the implementation of a specific category of numerical methods:
 
-- **Root Finding** (`root_finding/`): Contains methods for finding the roots of a function.
-  - Bisection (`bisection.cpp`, `bisection.h`)
-  - Newton-Raphson (`newton_raphson.cpp`, `newton_raphson.h`)
+- **Root Finding** (`RootFinding`): Contains methods for finding the roots of a function.
+  - Bisection (`Bisection.swift`)
+  - Newton-Raphson (`NewtonRaphson.swift`)
 
-- **Optimization** (`optimization/`): Contains methods for optimizing a function.
-  - Gradient Descent (`gradient_descent.cpp`, `gradient_descent.h`)
+- **Optimization** (`Optimization`): Contains methods for optimizing a function.
+  - Gradient Descent (`GradientDescent.swift`)
 
-- **Regression** (`regression/`): Contains methods for performing regression analysis.
-  - Least Squares (`least_squares.cpp`, `least_squares.h`)
+- **Regression** (`Regression`): Contains methods for performing regression analysis.
+  - Least Squares (`LeastSquares.swift`)
 
-- **Interpolation**: Contains methods for interpolating data points.
-  - Lagrange Interpolation (`lagrange_interpolation.cpp`, `lagrange_interpolation.h`)
+- **Interpolation** (`Interpolation`): Contains methods for interpolating data points.
+  - Lagrange Interpolation (`LagrangeInterpolation.swift`)
 
-- **Numerical Integration**: Contains methods for numerical integration.
-  - Trapezoidal Rule (`trapezoidal_rule.cpp`, `trapezoidal_rule.h`)
-  - Simpson's Rule (`simpsons_rule.cpp`, `simpsons_rule.h`)
+- **Numerical Integration** (`NumericalIntegration`): Contains methods for numerical integration.
+  - Trapezoidal Rule (`TrapezoidalRule.swift`)
+  - Simpson's Rule (`SimpsonsRule.swift`)
 
-- **ODE Solutions**: Contains methods for solving ordinary differential equations.
-  - Euler's Method (`euler_method.cpp`, `euler_method.h`)
-  - Runge-Kutta Methods (`runge_kutta_methods.cpp`, `runge_kutta_methods.h`)
+- **ODE Solutions** (`ODESolutions`): Contains methods for solving ordinary differential equations.
+  - Euler's Method (`EulerMethod.swift`)
+  - Runge-Kutta Methods (`RungeKuttaMethods.swift`)
 
-- **PDE Solutions**: Contains methods for solving partial differential equations.
-  - Finite Difference Method (`finite_difference_method.cpp`, `finite_difference_method.h`)
+- **PDE Solutions** (`PDESolutions`): Contains methods for solving partial differential equations.
+  - Finite Difference Method (`FiniteDifferenceMethod.swift`)
 
-Each module contains a `.cpp` file with the implementation of the methods and a `.h` file with the declaration of the functions.
+Each module contains a `.swift` file with the implementation of the methods.
 
-In addition to these modules, the `tests/` directory contains test files for each method, and `main.cpp` is the entry point for the application.
+In addition to these modules, the `Tests` directory contains test files for each method, and `main.swift` is the entry point for the application.
 
 ## Library Structure
 
-```
-Numerical-Methods-Cpp/
-|-- root_finding/
-  | |-- bisection.cpp
-  | |-- bisection.h
-  | |-- newton_raphson.cpp
-  | |-- newton_raphson.h
-|-- optimization/
-  | |-- gradient_descent.cpp
-  | |-- gradient_descent.h
-|-- regression/
-  | |-- least_squares.cpp
-  | |-- least_squares.h
-|-- interpolation/
-  | |-- lagrange_interpolation.cpp
-  | |-- lagrange_interpolation.h
-|-- numerical_integration/
-  | |-- trapezoidal_rule.cpp
-  | |-- trapezoidal_rule.h
-  | |-- simpsons_rule.cpp
-  | |-- simpsons_rule.h
-|-- ode_solutions/
-  | |-- euler_method.cpp
-  | |-- euler_method.h
-  | |-- runge_kutta_methods.cpp
-  | |-- runge_kutta_methods.h
-|-- pde_solutions/
-  | |-- finite_difference_method.cpp
-  | |-- finite_difference_method.h
-|-- tests/
-  | |-- test_bisection.cpp
-  | |-- test_newton_raphson.cpp
-  | |-- test_gradient_descent.cpp
-  | |-- test_least_squares.cpp
-|-- main.cpp
+NumericalMethodsSwift/
+|-- RootFinding/
+  | |-- Bisection.swift
+  | |-- NewtonRaphson.swift
+|-- Optimization/
+  | |-- GradientDescent.swift
+|-- Regression/
+  | |-- LeastSquares.swift
+|-- Interpolation/
+  | |-- LagrangeInterpolation.swift
+|-- NumericalIntegration/
+  | |-- TrapezoidalRule.swift
+  | |-- SimpsonsRule.swift
+|-- ODESolutions/
+  | |-- EulerMethod.swift
+  | |-- RungeKuttaMethods.swift
+|-- PDESolutions/
+  | |-- FiniteDifferenceMethod.swift
+|-- Tests/
+  | |-- TestBisection.swift
+  | |-- TestNewtonRaphson.swift
+  | |-- TestGradientDescent.swift
+  | |-- TestLeastSquares.swift
+|-- main.swift
 
-```
-
-## Dependencies
-
-This library uses the Eigen library for matrix operations. You can download it [here](http://eigen.tuxfamily.org/index.php?title=Main_Page).
-
-## Usage
-
-Include the relevant header files in your code. For example, to use the bisection method and least squares regression, you would do:
-
-```cpp
-#include "Numerical-Methods-Cpp/root_finding/bisection.h"
-#include "Numerical-Methods-Cpp/regression/least_squares.h"
-```
-
-Then, you can call the functions in your code:
-
-```cpp
-double root = bisection(my_function, a, b, tol);
-std::vector<double> coefficients = least_squares(x_values, y_values);
-```
 
