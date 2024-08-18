@@ -35,7 +35,7 @@ Each module contains a `.swift` file with the implementation of the methods.
 In addition to these modules, the `Tests` directory contains test files for each method, and `main.swift` is the entry point for the application.
 
 ## Library Structure
-
+```
 NumericalMethodsSwift/
 |-- RootFinding/
   | |-- Bisection.swift
@@ -61,4 +61,4 @@ NumericalMethodsSwift/
   | |-- TestLeastSquares.swift
 |-- main.swift
 
-
+```
