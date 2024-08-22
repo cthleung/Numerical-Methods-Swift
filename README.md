@@ -1,6 +1,6 @@
 # Swift Numerical Methods
 
-This is a Swift library implementing various numerical methods for root finding, optimization, regression, interpolation, linear algebra, numerical integration, and solving ordinary and partial differential equations.
+This is a Swift library implementing various numerical methods for root finding, optimization, regression, interpolation, linear algebra, numerical integration, and solving ordinary and partial differential equations, with the goal of creating reusable and modular code that prioritizes efficiency, maintainability, and robust error handling while providing an intuitive interface for end-users.
 
 ## Methods Implemented
 
